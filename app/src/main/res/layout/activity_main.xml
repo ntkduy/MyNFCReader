@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.ntkduy1604.mynfcreader.MainActivity">
+
+        <TextView
+            style="@style/HeaderText"
+            android:text="@string/intro_message" />
+
+        <TextView
+            android:id="@+id/instruction"
+            style="@style/HeaderText"
+            android:text="@string/instruction" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fadingEdge="vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/DataDisplay"
+                    android:text="@string/device_id_static" />
+
+                <TextView
+                    style="@style/DataDisplay"
+                    android:text="@string/device_mifare_size_static" />
+
+                <TextView
+                    style="@style/DataDisplay"
+                    android:text="@string/device_mifare_classic_type_static" />
+
+                <TextView
+                    style="@style/DataDisplay"
+                    android:text="@string/device_mifare_sector_static" />
+
+                <TextView
+                    style="@style/DataDisplay"
+                    android:text="@string/device_mifare_block_static" />
+
+                <TextView
+                    style="@style/DataDisplay"
+                    android:layout_height="50dp"
+                    android:text="@string/device_technologies_static" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fadingEdge="vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tag_id_hex"
+                    style="@style/DataDisplay"
+                    android:text="@string/tag_id_hex" />
+
+                <TextView
+                    android:id="@+id/nfc_mifire_size"
+                    style="@style/DataDisplay"
+                    android:text="@string/nfc_mifire_size" />
+
+                <TextView
+                    android:id="@+id/nfc_mifire_type"
+                    style="@style/DataDisplay"
+                    android:text="@string/nfc_mifire_type" />
+
+                <TextView
+                    android:id="@+id/nfc_mifire_sector"
+                    style="@style/DataDisplay"
+                    android:text="@string/nfc_mifire_sector" />
+
+                <TextView
+                    android:id="@+id/nfc_mifire_block"
+                    style="@style/DataDisplay"
+                    android:text="@string/nfc_mifire_block" />
+
+                <TextView
+                    android:id="@+id/nfc_technologies"
+                    style="@style/DataDisplay"
+                    android:layout_height="50dp"
+                    android:text="@string/nfc_technologies" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/nfc_enable"
+                android:textSize="28sp" />
+            <TextView
+                android:id="@+id/contact_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/contact_detail"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

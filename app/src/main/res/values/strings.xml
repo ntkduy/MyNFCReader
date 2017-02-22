@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My NFC Reader</string>
+
+    <string name="intro_message">This is a simple app to read NFC data</string>
+    <string name="instruction">Please put your RFID, NFC cards to start</string>
+    <string name="explanation">NFC is ready</string>
+    <string name="contact_detail">q.phung@ecu.edu.au</string>
+
+    <string name="error">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="nfc_enable">NFC is ready</string>
+    <string name="nfc_disabled">NFC is disabled!</string>
+
+    <string name="device_id_static">Tag ID (HEX): </string>
+    <string name="device_technologies_static">Technologies:</string>
+    <string name="device_mifare_classic_type_static">Mifare type:</string>
+    <string name="device_mifare_size_static">Mifare size:</string>
+    <string name="device_mifare_sector_static">Mifare sectors:</string>
+    <string name="device_mifare_block_static">Mifare blocks:</string>
+
+    <string name="tag_id_hex">0 </string>
+    <string name="nfc_technologies">0 </string>
+    <string name="nfc_mifire_type">0 </string>
+    <string name="nfc_mifire_size">0 </string>
+    <string name="nfc_mifire_sector">0 </string>
+    <string name="nfc_mifire_block">0 </string>
+
+
+</resources>
